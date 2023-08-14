@@ -4,6 +4,7 @@
  
 }
 
+
 .nav{
   padding: 0;
   margin: 0;
@@ -16,7 +17,7 @@
   
 }
 body{
-  background-image: linear-gradient(to right,#c1c1c1,rgb(181, 181, 181));
+  background-image: linear-gradient(to right,#ffffff,rgb(255, 255, 255));
  /* background-image: linear-gradient(to right,rgb(91, 118, 215),rgb(22, 52, 148));*/
  /* background-color: #868da4;/*
   /*background-color: #5469ac;*/
@@ -45,13 +46,17 @@ body{
   padding: 0 20px;
 }
 
+
+
+
 .mySlides{
  height: 450px;
  width: 100%;
 }
 #stu{
-  width: 100%;
-  text-align: center;
+  width: 30%;
+  text-align: left;
+  margin: auto;
 }
 
 .school_rules{
@@ -114,9 +119,7 @@ body{
   transform: scale(1.03);
 
 }
-#picBody h1{
-  width: 100%;
-}
+
 
 .picContainer{
   display: flex;
@@ -125,38 +128,16 @@ body{
   justify-content: space-around
   
 }
-.picsContainer a{
-  /*display: flex;
-  flex-wrap: wrap;*/
-  
-}
-.picGalleryContainer{
-  width: 100%;
-  display: flex;
-}
-.testColumn{
-  width: 33%;
-}
-.testColumn img{
-  
-  width: 200px;
-  height: 200px;
-  padding-top: 20px;
-  object-fit: fill;
-  /*changes how the pictures appear in the lil quare*/
-}
-.picContainer img{
-  
-  padding-bottom: 30px;
-}
-.programDoubleContainer{
-  display: flex;
-}
+
+
+
+
+
 .singleProgramContainer{
-  width: 50%;
+  width: 100%;
 }
 .singleProgramContainer p{
-  font-size: 21px;
+  font-size: 22px;
 }
 .agePrograms p{
   font-size: 20px;
@@ -189,7 +170,71 @@ body{
 
 }
 
+.scrollUp{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
 
+.scrollUp.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*pop up animation for changing page*/
+.popUp{
+  animation: transitionIn 1s;
+}
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.leftSlide{
+  animation: slideLeft 1s;
+}
+@keyframes slideLeft {
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+  
+}
+
+.rightSlide{
+  animation: slideright 1s;
+}
+@keyframes slideright {
+  from{
+    transform: translateX(100px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+  
+}
+
+.upSlide{
+  animation: slideUp 1s;
+}
+@keyframes slideUp {
+  from{
+    transform: translateY(100px);
+  }
+  to{
+    transform: translateY(0px);
+  }
+  
+}
 
 
 
@@ -230,7 +275,8 @@ body{
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #1e4de9;
+ /* background-color: #1e4de9;*/
+ background-color: rgb(219, 204, 69);;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -242,7 +288,8 @@ body{
   margin-bottom: 10px;
 }
 .footer-col p{
-  color: #8E8D8A;
+ /* color: #8E8D8A;*/
+ color: #8E8D8A;
 }
 .footer-col ul li a{
   font-size: 16px;
@@ -282,6 +329,12 @@ body{
    .mobileProgramPage{
     display: none;
    }
+   .mobileBenefits{
+    display: none;
+   }
+   .mobileAbout{
+    display: none;
+   }
    
 }
 
@@ -299,6 +352,9 @@ body{
 @media(max-width:1149px){
   .contactMiddle{
     width: 100%;
+  }
+  #stu{
+    width: 45%;
   }
 }
 
@@ -319,6 +375,99 @@ body{
   }
  
 }
+@media(max-width:948px){
+  .nav{
+    display: none;
+  }
+  .topElement{
+    padding-top: 50px;
+    
+  }
+  .mySlides{
+    padding-top: 50px;
+  }
+ 
+  .dropbtn {
+    background-color: #353434;
+    color: rgb(151, 147, 147);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position:fixed;
+    display: inline-block;
+    width: 100%;
+    background-color: #353434;
+    z-index: 2;/*makes it so relative elemtnst dont go on bar*/
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:rgb(56, 86, 130);
+  }
+
+  
+}
+
+@media(max-width:930px){
+  .programsSection{
+    width: 100%;
+  }
+  .programsSection p{
+    position: inherit;
+    left: 0px;
+  }
+  .desktopProgramPage{
+    display: none;
+  }
+  .mobileProgramPage{
+    display:inline;
+    
+  }
+}
+
+@media(max-width:830px){
+  .desktopAbout{
+    display: none;
+  }
+  .mobileAbout{
+    display: inline;
+  }
+  .desktopBenefits{
+    display: none;
+  }
+  .mobileBenefits{
+    display: inline;
+  }
+  .singleProgramContainer p{
+    font-size: 18px;
+  }
+
+}
 
 
 
@@ -334,6 +483,10 @@ body{
   .slideshowHolder{
     height: 200px;
   }
+  #stu{
+    width: 90%;
+  }
+  
   
 }
 @media(max-width:574px){
@@ -360,87 +513,7 @@ body{
   }
   
 }
-@media(max-width:948px){
-  .nav{
-    display: none;
-  }
-  .topElement{
-    padding-top: 50px;
-    
-  }
-  .mySlides{
-    padding-top: 50px;
-  }
- 
-  .dropbtn {
-    background-color: #353434;
-    color: rgb(151, 147, 147);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position: fixed;
-    display: inline-block;
-    width: 100%;
-    background-color: #353434;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #5469ac;
-  }
 
-  
-}
-
-@media(max-width:930px){
-  .programsSection{
-    width: 100%;
-  }
-  .programsSection p{
-    position: inherit;
-    left: 0px;
-  }
-
-}
-
-@media(max-width:830px){
-  .desktopProgramPage{
-    display: none;
-  }
-  .mobileProgramPage{
-    display:inline;
-    
-  }
-  .singleProgramContainer p{
-    font-size: 18px;
-  }
-
-}
 
 /*iphone width*/
 @media(max-width:420px){
