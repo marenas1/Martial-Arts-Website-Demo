@@ -52,6 +52,7 @@ body{
 .mySlides{
  height: 450px;
  width: 100%;
+ 
 }
 #stu{
   width: 30%;
@@ -427,7 +428,7 @@ body{
   }
   
   .dropdown:hover .dropbtn {
-    background-color:rgb(56, 86, 130);
+    background-color:rgb(46, 77, 159);
   }
 
   
