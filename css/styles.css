@@ -30,6 +30,8 @@ body{
 }
 
 /*slide start*/
+
+
 .homePageSlideShowContainer{
   height: 95vh;
   display: flex;
@@ -80,7 +82,7 @@ body{
 }
 
 .navHome{
-  height: 650px;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -312,7 +314,7 @@ body{
 
 /*pop up animation for changing page*/
 .popUp{
-  animation: transitionIn 1s;
+  animation: transitionIn 0.5s;
 }
 @keyframes transitionIn{
   from{
@@ -404,7 +406,7 @@ body{
   left: 0;
   bottom: -10px;
  /* background-color: #1e4de9;*/
- background-color: rgb(219, 204, 69);;
+ background-color: rgb(46, 77, 159);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -471,12 +473,26 @@ body{
 
 @media(max-width:1480px){
   .singleProgramContainer p{
+    font-size: 20px;
+  }
+}
+
+
+@media(max-width:1340px){
+  .agePrograms p{
     font-size: 18px;
   }
 }
-@media(max-width:1280px){
+
+@media(max-width:1207px){
+  .agePrograms p{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:1180px){
   .singleProgramContainer p{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -553,7 +569,7 @@ body{
   }
   
   .dropdown-content a:hover {background-color: #f1f1f1}
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -561,9 +577,14 @@ body{
   .dropdown:hover .dropbtn {
     background-color:rgb(46, 77, 159);
   }
-
   
 }
+
+/*@media (hover: hover) {
+  .dropbtn:hover {
+      background-color: rgb(201, 255, 39);
+  }
+}*/
 
 @media(max-width:930px){
   .programsSection{
@@ -623,6 +644,12 @@ body{
 }
 
 
+@media(max-width:775px){
+  .singleProgramContainer p{
+    font-size: 16px;
+  }
+}
+
 
 @media(max-width:730px){
   .nav{
@@ -639,9 +666,22 @@ body{
   #stu{
     width: 90%;
   }
-  
-  
 }
+
+@media(max-width:775px){
+  .singleProgramContainer p{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:580px){
+  .singleProgramContainer p{
+   font-size: 12px;
+ }
+}
+
+
+
 @media(max-width:574px){
   .footer-col{
     width: 100%;
