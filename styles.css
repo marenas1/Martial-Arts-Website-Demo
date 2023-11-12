@@ -30,7 +30,9 @@ body{
 }
 
 /*slide start*/
-.homePageSlideShowContainer{
+
+
+/*.homePageSlideShowContainer{
   height: 95vh;
   display: flex;
   justify-content: center;
@@ -40,11 +42,7 @@ body{
 
 .img-slider{
   position: relative;
- /* width: 1100px;
-  height: 825px;*/
-  /*800w 500h*/
   width: 100%;
- /* height: 100%;*/
   margin:10px;
   overflow: hidden;
   background: rgb(43, 43, 43);
@@ -54,7 +52,6 @@ body{
   z-index: 1;
   position:absolute;
   height: 100%;
-  /*height: 100%;*/
   opacity: 0;
   
 
@@ -70,17 +67,11 @@ body{
   z-index: 1;
   border-radius: 5px;
   width: 100%;
-  /*width:1960px*/
- 
   
-  /*height: 100%;*/
-  /*remove to not stretch*/
-  
-  /*object fit cover*/
 }
 
 .navHome{
-  height: 650px;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -214,7 +205,7 @@ body{
 
 .contactMiddle{
   width: 50%;
-  height: 400px; 
+  height: 500px; 
   text-align: center;
 }
 .slideshowHolder{
@@ -298,6 +289,12 @@ body{
   display: none;
 }
 
+.pSpacingPrograms p{
+  width: 95%;
+  padding-left: 5px;
+  
+}
+
 .scrollUp{
   position: relative;
   transform: translateY(150px);
@@ -312,7 +309,7 @@ body{
 
 /*pop up animation for changing page*/
 .popUp{
-  animation: transitionIn 1s;
+  animation: transitionIn 0.5s;
 }
 @keyframes transitionIn{
   from{
@@ -404,7 +401,7 @@ body{
   left: 0;
   bottom: -10px;
  /* background-color: #1e4de9;*/
- background-color: rgb(219, 204, 69);;
+ background-color: rgb(46, 77, 159);
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -433,6 +430,14 @@ body{
   color: rgb(227, 226, 224);
   padding-left: 10px;
 }
+.footList p a{
+  color: #35383b;
+}
+.footList p a:hover{
+  color: rgb(227, 226, 224);
+  padding-left: 10px;
+  transition: all 0.5s ease;
+}
 .footer-col .social-links a{
   display: inline-block;
   height: 40px;
@@ -451,9 +456,6 @@ body{
 /*responsiveness*/
 
 @media(max-width:2500px){
-  .dropdown{
-    display: none;
-   }
    .mobileProgramPage{
     display: none;
    }
@@ -471,12 +473,26 @@ body{
 
 @media(max-width:1480px){
   .singleProgramContainer p{
+    font-size: 20px;
+  }
+}
+
+
+@media(max-width:1340px){
+  .agePrograms p{
     font-size: 18px;
   }
 }
-@media(max-width:1280px){
+
+@media(max-width:1207px){
+  .agePrograms p{
+    font-size: 16px;
+  }
+}
+
+@media(max-width:1180px){
   .singleProgramContainer p{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -498,6 +514,16 @@ body{
   }
 }
 
+@media(max-width:1080px){
+  .desktopProgramPage{
+    display: none;
+  }
+  .mobileProgramPage{
+    display:inline;
+    
+  }
+}
+
 @media(max-width:1050px){
   
   .footer-col{
@@ -511,59 +537,12 @@ body{
   .nav{
     display: none;
   }
-  .topElement{
-    padding-top: 50px;
-    
-  }
   .mySlides{
     padding-top: 50px;
   }
- 
-  .dropbtn {
-    background-color: #353434;
-    color: rgb(151, 147, 147);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    position:fixed;
-    display: inline-block;
-    width: 100%;
-    background-color: #353434;
-    z-index: 2;/*makes it so relative elemtnst dont go on bar*/
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color:rgb(46, 77, 159);
-  }
-
-  
 }
+
+
 
 @media(max-width:930px){
   .programsSection{
@@ -573,16 +552,10 @@ body{
     position: inherit;
     left: 0px;
   }
-  .desktopProgramPage{
-    display: none;
-  }
-  .mobileProgramPage{
-    display:inline;
-    
-  }
+  
 }
 
-@media(max-width:830px){
+@media(max-width:836px){
   .desktopAbout{
     display: none;
   }
@@ -623,6 +596,12 @@ body{
 }
 
 
+@media(max-width:775px){
+  .singleProgramContainer p{
+    font-size: 16px;
+  }
+}
+
 
 @media(max-width:730px){
   .nav{
@@ -639,9 +618,22 @@ body{
   #stu{
     width: 90%;
   }
-  
-  
 }
+
+@media(max-width:775px){
+  .singleProgramContainer p{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:580px){
+  .singleProgramContainer p{
+   font-size: 12px;
+ }
+}
+
+
+
 @media(max-width:574px){
   .footer-col{
     width: 100%;
