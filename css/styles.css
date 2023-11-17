@@ -318,6 +318,12 @@ body{
   color: rgb(219,204,69);
 }
 
+.peopleDescription{
+  color: rgb(219,204,69);
+  padding-left: 5px;
+
+}
+
 .scrollUp{
   position: relative;
   transform: translateY(150px);
