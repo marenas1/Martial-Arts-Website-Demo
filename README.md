@@ -1,10 +1,10 @@
 # sykimstkd.com -Martial Arts Website
-This is a website made to demonstrate mastery over HTML,CSS, JS and the use of the framework bootstrap. The site is also live under sykimstkd.com and in use demonstrating it's real world capabilities.
 
 Created by: **Matthew Arenas**
-**HTML,CSS,JS,Bootstrap**
 
-**sykimstkd.com** is a website that allows users to get information about the martial arts school, in the form of images,schedules, videos etc. The website serves the purpose of transmitting information to current students and future students.
+Using:**HTML,CSS,JS,Bootstrap**
+
+**sykimstkd.com** is a website that allows users to get information about the martial arts school, in the form of images,schedules, videos etc. The website serves the purpose of transmitting information to current students and future students. Created as a project to showcase mastery over HTML,CSS and JS and turned into a live site.
 
 <a href="sykimstkd.com">sykimstkd.com</a>
 
